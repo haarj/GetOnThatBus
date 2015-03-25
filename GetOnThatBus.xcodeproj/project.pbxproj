@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		33D94E781AC213A300D87B54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D94E771AC213A300D87B54 /* main.m */; };
 		33D94E7B1AC213A300D87B54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D94E7A1AC213A300D87B54 /* AppDelegate.m */; };
-		33D94E7E1AC213A300D87B54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D94E7D1AC213A300D87B54 /* ViewController.m */; };
+		33D94E7E1AC213A300D87B54 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D94E7D1AC213A300D87B54 /* MapViewController.m */; };
 		33D94E811AC213A300D87B54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D94E7F1AC213A300D87B54 /* Main.storyboard */; };
 		33D94E831AC213A300D87B54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D94E821AC213A300D87B54 /* Images.xcassets */; };
 		33D94E861AC213A300D87B54 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33D94E841AC213A300D87B54 /* LaunchScreen.xib */; };
 		33D94E921AC213A400D87B54 /* GetOnThatBusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D94E911AC213A400D87B54 /* GetOnThatBusTests.m */; };
+		33D94E9D1AC2143700D87B54 /* BusStops.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D94E9C1AC2143700D87B54 /* BusStops.m */; };
+		33D94E9F1AC215EF00D87B54 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D94E9E1AC215EF00D87B54 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,17 @@
 		33D94E771AC213A300D87B54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33D94E791AC213A300D87B54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		33D94E7A1AC213A300D87B54 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		33D94E7C1AC213A300D87B54 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		33D94E7D1AC213A300D87B54 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		33D94E7C1AC213A300D87B54 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		33D94E7D1AC213A300D87B54 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		33D94E801AC213A300D87B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33D94E821AC213A300D87B54 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		33D94E851AC213A300D87B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		33D94E8B1AC213A400D87B54 /* GetOnThatBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetOnThatBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D94E901AC213A400D87B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33D94E911AC213A400D87B54 /* GetOnThatBusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetOnThatBusTests.m; sourceTree = "<group>"; };
+		33D94E9B1AC2143700D87B54 /* BusStops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStops.h; sourceTree = "<group>"; };
+		33D94E9C1AC2143700D87B54 /* BusStops.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStops.m; sourceTree = "<group>"; };
+		33D94E9E1AC215EF00D87B54 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D94E9F1AC215EF00D87B54 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		33D94E691AC213A300D87B54 = {
 			isa = PBXGroup;
 			children = (
+				33D94EA01AC215F900D87B54 /* Frameworks */,
 				33D94E741AC213A300D87B54 /* GetOnThatBus */,
 				33D94E8E1AC213A400D87B54 /* GetOnThatBusTests */,
 				33D94E731AC213A300D87B54 /* Products */,
@@ -83,9 +90,11 @@
 			children = (
 				33D94E791AC213A300D87B54 /* AppDelegate.h */,
 				33D94E7A1AC213A300D87B54 /* AppDelegate.m */,
-				33D94E7C1AC213A300D87B54 /* ViewController.h */,
-				33D94E7D1AC213A300D87B54 /* ViewController.m */,
+				33D94E7C1AC213A300D87B54 /* MapViewController.h */,
+				33D94E7D1AC213A300D87B54 /* MapViewController.m */,
 				33D94E7F1AC213A300D87B54 /* Main.storyboard */,
+				33D94E9B1AC2143700D87B54 /* BusStops.h */,
+				33D94E9C1AC2143700D87B54 /* BusStops.m */,
 				33D94E821AC213A300D87B54 /* Images.xcassets */,
 				33D94E841AC213A300D87B54 /* LaunchScreen.xib */,
 				33D94E751AC213A300D87B54 /* Supporting Files */,
@@ -117,6 +126,14 @@
 				33D94E901AC213A400D87B54 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33D94EA01AC215F900D87B54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33D94E9E1AC215EF00D87B54 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33D94E7E1AC213A300D87B54 /* ViewController.m in Sources */,
+				33D94E9D1AC2143700D87B54 /* BusStops.m in Sources */,
+				33D94E7E1AC213A300D87B54 /* MapViewController.m in Sources */,
 				33D94E7B1AC213A300D87B54 /* AppDelegate.m in Sources */,
 				33D94E781AC213A300D87B54 /* main.m in Sources */,
 			);
